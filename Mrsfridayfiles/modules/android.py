@@ -111,7 +111,7 @@ async def evo(event):
 
     if fetch.status_code in [500, 504, 505]:
         await event.reply(
-            "Haruka Aya have been trying to connect to Github User Content, It seem like Github User Content is down"
+            "MRS.FRIDAY have been trying to connect to Github User Content, It seem like Github User Content is down"
         )
         return
 

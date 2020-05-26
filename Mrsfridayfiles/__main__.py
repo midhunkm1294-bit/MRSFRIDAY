@@ -97,7 +97,7 @@ def send_help(chat_id, text, keyboard=None):
 @run_async
 def test(bot: Bot, update: Update):
     #pprint(eval(str(update)))
-    #update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
+    #update.effective_message.reply_text("Hola Man ! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
     update.effective_message.reply_text("This person edited a message")
     print(update.effective_message)
 
@@ -179,7 +179,7 @@ def control_panel(bot, update):
 
         LOGGER.info(query.data)
     else:
-        M_match = "ThaNos is the best bot" #LMAO, don't uncomment
+        M_match = "Mrs.Friday is the best bot" #LMAO, don't uncomment
 
     if M_match:
         text = "*Control panel*🔱"
@@ -518,7 +518,7 @@ def get_settings(bot: Bot, update: Update):
                                                       url="t.me/{}?start=stngs_{}".format(
                                                           bot.username, chat.id))]]))
         else:
-            text = "Click here to check your settings."
+            text = "🚧Click here to check your settings🚧.."
 
     else:
         send_settings(chat.id, user.id, True)
